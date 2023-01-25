@@ -9,10 +9,17 @@ To-Do:
 4.) Menu
 5.)
 
+https://pypi.org/project/getch/
+Test usage for input handling
+
 '''
 import sys
 from boardSetup import Board
+import msvcrt
 
-testBoard = Board(40)
+testBoard = Board(30)
 
 testBoard.printCurrentBoard()
+
+get = msvcrt.getch()
+if get is 'v': print("yup!")
