@@ -12,14 +12,24 @@ To-Do:
 https://pypi.org/project/getch/
 Test usage for input handling
 
+import curses
+
+
+def getch():
+    screen = curses.initscr()
+    print(screen.getch())
+
+
+getch()
+
 '''
 import sys
 from boardSetup import Board
-import msvcrt
+
 
 testBoard = Board(30)
 
 testBoard.printCurrentBoard()
 
-get = msvcrt.getch()
-if get is 'v': print("yup!")
+get = _Getch()
+if get == 'v': print("yup!")
