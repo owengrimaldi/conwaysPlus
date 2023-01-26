@@ -52,7 +52,9 @@ class Board:
 
         for currRow in range(self.boardSize):
             for currCol in range(self.boardSize):
+                numConnect = 0
                 
+
 
                 
                 
